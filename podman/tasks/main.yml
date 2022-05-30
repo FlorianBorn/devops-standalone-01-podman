@@ -2,7 +2,7 @@
 - name: install podman
   package:
     name: "{{ item }}"
-    state: present
+    state: absent
   become_user: root
   become: yes
   loop:
